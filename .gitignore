@@ -1,3 +1,4 @@
-/out
-/.idea
-JavaHomework.iml
+*/out
+*/.idea
+*.class
+*.xlass
