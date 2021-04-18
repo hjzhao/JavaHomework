@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="Person1" class="com.zhj.bean.Homework.Person">
+        <property name="name" value="person1" />
+        <property name="age" value="10"/>
+    </bean>
+
+    <bean id="Person2" class="com.zhj.bean.Homework.Person">
+        <constructor-arg name="name" value="person2" />
+        <constructor-arg name="age" value="11" />
+    </bean>
+
+    <bean id="PersonDao" class="com.zhj.bean.Homework.PersonDao" />
+
+    <bean id="PersonService" class="com.zhj.bean.Service.PersonService">
+        <property name="personDao" ref="PersonDao" />
+    </bean>
+
+</beans>
