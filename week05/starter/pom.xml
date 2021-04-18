@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.zhj</groupId>
-	<artifactId>starter</artifactId>
+	<artifactId>zhj-spring-boot-starter</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>starter</name>
+	<name>zhj-spring-boot-starter</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -27,6 +27,22 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+		</dependency>
+
+        <dependency>
+            <groupId>com.zhj</groupId>
+            <artifactId>zhj-spring-boot-starter</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 	</dependencies>
 
 	<build>
